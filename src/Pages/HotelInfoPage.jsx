@@ -4,6 +4,7 @@ import useFetch from '../hooks/useFetch'
 import { Map, Marker, ZoomControl } from 'pigeon-maps'
 import OtherHotels from '../components/HotelInfoPage/OtherHotels'
 import ReservationsHotel from '../components/HotelInfoPage/ReservationsHotel'
+import SliderImgs from '../components/HotelInfoPage/SliderImgs'
 
 const HotelInfoPage = () => {
 
@@ -24,7 +25,9 @@ const HotelInfoPage = () => {
         <h2>{hotel?.name}</h2>
         <span>rating</span>
       </header>
-      <img src={hotel?.images[0].url} alt="" />
+      <SliderImgs 
+        hotel={hotel}
+      />
       <div>
         {
           hotel && (
