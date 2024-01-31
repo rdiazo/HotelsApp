@@ -1,10 +1,10 @@
 import { useEffect } from "react"
-import usefetch from "../../hooks/usefetch"
+import useFetch from "../../hooks/useFetch"
 
 const FilterCities = ({ setIdCity }) => {
 
     const url = 'https://hotels-api.academlo.tech/cities'
-    const [ cities, getCities ] = usefetch(url)
+    const [ cities, getCities ] = useFetch(url)
 
     useEffect(() => {
       getCities()

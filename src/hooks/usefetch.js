@@ -1,7 +1,7 @@
 import axios from "axios"
 import { useState } from "react"
 
-const usefetch = (url) => {
+const useFetch = (url) => {
     const [response, setResponse] = useState()
 
     const getApi = () => {
@@ -12,4 +12,4 @@ const usefetch = (url) => {
     return [ response, getApi ]    
 }
 
-export default usefetch
+export default useFetch                                                                                                                                                               
