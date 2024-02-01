@@ -20,6 +20,9 @@ const ReserveCard = ({ reserve, deleteReservation }) => {
         <section>
             <h3>{reserve.hotel.name}</h3>
             <div>{reserve.hotel.city.name}, {reserve.hotel.city.country}</div>
+                <div>
+                    <div className="reserve__rating">Rate and comment this visit</div>
+                </div>
             <div><span>Reservations days:</span><span>{reservationsDays}</span></div>
             <div><span>subtotal Price:</span><span>{Number(reserve.hotel.price) * reservationsDays }</span></div>
         </section>

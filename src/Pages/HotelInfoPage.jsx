@@ -1,17 +1,19 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import useFetch from '../hooks/useFetch'
+//import useFetch from '../hooks/useFetch'
 import { Map, Marker, ZoomControl } from 'pigeon-maps'
 import OtherHotels from '../components/HotelInfoPage/OtherHotels'
 import ReservationsHotel from '../components/HotelInfoPage/ReservationsHotel'
 import SliderImgs from '../components/HotelInfoPage/SliderImgs'
+import useFetch from '../hooks/useFetch'
 
 const HotelInfoPage = () => {
 
   const { id } = useParams()
 
   const url = `https://hotels-api.academlo.tech/hotels/${id}`
-  const [hotel, getHotel] = useFetch(url)
+  const [ hotel, getHotel ] = useFetch(url)
+  //const [hotel, getHotel] = useFetch(url)
 
   useEffect(() => {
     getHotel()

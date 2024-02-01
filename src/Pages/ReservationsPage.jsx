@@ -10,7 +10,6 @@ const ReservationsPage = () => {
     getReservations('/bookings')
   }, [])
   
-  
   return (
     <div>
       <h2>Reservations</h2>

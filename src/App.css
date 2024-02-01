@@ -1,3 +1,12 @@
 label {
     display: block;
 }
+
+.reserve__rating {
+    color: blue;
+}
+
+.reserve__rating:hover {
+    color: blue;
+    text-decoration: underline;
+}
