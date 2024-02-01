@@ -6,6 +6,7 @@ const HeaderShared = () => {
         <h1><Link to='/' >BookingApp</Link></h1>
         <nav>
             <ul>
+                <li><Link to='/reservations' >Reservations</Link></li>
                 <li><Link to='/register' >Register</Link></li>
                 <li><Link to='/login' >Login</Link></li>
             </ul>

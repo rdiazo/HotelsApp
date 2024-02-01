@@ -26,7 +26,9 @@ const baseUrl = 'https://hotels-api.academlo.tech'
     const deleteApi = (path, id) => {
         const url = `${baseUrl}${path}/${id}`
         axios.delete(url, getConfigToken())
-        .then(res => console.log(res.data))
+        .then(res => { console.log(res.data)
+        setResponse(response.filter(elem => elem.id != id))
+    })
         .catch(err => console.log(err))
     }
     // UPFRADE

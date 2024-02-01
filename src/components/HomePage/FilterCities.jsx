@@ -10,7 +10,7 @@ const FilterCities = ({ setIdCity }) => {
       getCities()
     }, [])
     
-    console.log(cities)
+   // console.log(cities)
 
     const handleFilterCities = (id) => {
         setIdCity(id)

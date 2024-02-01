@@ -6,6 +6,7 @@ import LoginPage from './Pages/LoginPage'
 import UnknowPages from './Pages/UnknowPages'
 import HotelInfoPage from './Pages/HotelInfoPage'
 import HeaderShared from './components/shared/HeaderShared'
+import ReservationsPage from './Pages/ReservationsPage'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path='/register' element={<RegisterPage />} />
         <Route path='/login' element={<LoginPage />} />
          <Route path='/hotel/:id' element={<HotelInfoPage />} />
+         <Route path='/reservations' element={<ReservationsPage/>} />
         <Route path='*' element={<UnknowPages />} />
       </Routes>
     </div>

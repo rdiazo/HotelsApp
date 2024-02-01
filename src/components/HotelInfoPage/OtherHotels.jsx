@@ -14,7 +14,7 @@ const OtherHotels = ({ cityId, hotelId }) => {
         // cityId && getHotels()
     }, [cityId])
 
-    console.log(hotels)
+   // console.log(hotels)
 
     return (
         <div>
